@@ -12,8 +12,8 @@ public class GeolocationServiceImpl implements GeolocationService{
 	
 	@Autowired
 	GeolocationRepository geolocationRepository;
-//	@Value("${google.geolocation.api.key}")
-    private String apiKey=null;
+	@Value("${google.geolocation.api.key}")
+    private String apiKey;
 
 	@Override
 	public Location saveCityDetails(Location location) {
